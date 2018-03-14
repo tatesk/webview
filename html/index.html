@@ -15,7 +15,7 @@
 
   <style type="text/css" media="screen">
   html{
-  /*font-family:'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;*/
+  font-family:'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
   /*-webkit-font-feature-settings: 'pkna';*/
           /*font-feature-settings: 'pkna';*/
   /*font-size: 18px;*/
@@ -28,6 +28,8 @@
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;*/
   }
+  .kunten{vertical-align: bottom;}
+  .kunten-okuri{vertical-align: top;}
   @font-face {
     font-family: number!important;
     /*src: local('-apple-system');*/
@@ -388,51 +390,26 @@ p, span, div {
 
 </head>
 
-<!--
- <body class="info-top hltr">
-  <div class="main" style="width: 303px">
-    <p><span class="gfont font-120per">著者：浅田次郎</span></p>
-    <p>吾輩わがはいはねこねこねこねこねここね<span style="display: inline-block;">『<ruby>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt></ruby>』</span>でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかも</p>
-    <p>1951年東京都生まれ。1995年『<ruby>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt></ruby>に乗って』で吉川英治文学新人賞、1997年『<ruby>鉄道員<rt>ぽつぽや</rt></ruby>』で直木賞、2000年『<ruby>壬<rt>み</rt>生<rt>ぶ</rt></ruby>義士伝』で柴田錬三郎賞、2006年『お腹召しませ』で中央公論文芸賞、司馬<img class="gaiji" src="../image/uf9c3.png" alt=""/>太郎賞、2008年には『中原の虹』で吉川英治文学賞を受賞する。<span class="gfont bold"><span style="display: inline-block;">『<ruby>日<rt>にち</rt>輪<rt>りん</rt></ruby>の<ruby>遺<rt>い</rt>産<rt>さん</rt></ruby>』</span></span><span class="gfont"><span style="display: inline-block;">『<ruby>霞<rt>かすみ</rt>町<rt>ちよう</rt>物<rt>もの</rt>語<rt>がたり</rt></ruby>』</span></span>『<span class="bold italic"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』『<span class="gfont italic"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』『<span class="kasen"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』<span class="gfont">『<ruby>歩<rt>ほ</rt>兵<rt>へい</rt></ruby>の<ruby>本<rt>ほん</rt>領<rt>りよう</rt></ruby>』</span>、エッセイ『<span class="em-dot">勇気凜凜ルリの色</span>』シリーズなど著書多数。講談社創業100周年記念作品として、『<span class="gfont italic">蒼穹の昴</span>』（ゴシック・イタリック）、本作品、『<span class="bold italic">中原の虹</span>』（太字・イタリック）から連なる中国シリーズ最新作<span class="bosen">『マンチュリアン・リポート』</span>を刊行。</p>
-  </div>
-</body>
- -->
 <body class="main-top">
 <div class="main">
-<p>【訓点】</p>
-<p><ruby>未<span class="kunten">四</span>曾有<span class="kunten">三</span><rt>いまだかつて</rt></ruby><ruby>一事不<span class="kunten">レ</span>被<span class="kunten">二</span><rt>いちじのむじように</rt></ruby><ruby>無常呑<span class="kunten">一</span><rt>のまれざるはあらず</rt></ruby></p>
-<p>世上所<span class="kunten-okuri">ノ</span><span class="kunten">レ</span>有実事<span class="kunten-okuri">ナリ</span></p>
+
 <hr/>
-<p>【画像外字に訓点、上付、下付を指定】</p>
-<p>画像<span class="kunten"><img class="gaiji" src="../image/hyphen_reten.png" alt=""/></span>画像<span class="super"><img class="gaiji" src="../image/paren_a.png" alt=""/></span>画像<span class="sub"><img class="gaiji" src="../image/paren_a.png" alt=""/></span>画像</p>
+<p>【注などのリンク】</p>
+<p>太陽磁場<a href="kd999999_0008.xhtml#note_a_01"><span class="gfont font-090per">（注<span class="tcy">1</span>）</span></a>のメカニズム</p>
 <hr/>
-<p>【小書き文字】</p>
-<p>古池や　蛙飛<span class="kogaki">ン</span>だる　水の音</p>
-<hr/>
-<p>【上付文字】</p>
-<p>上付き文字はA<span class="super">2</span>です。</p>
-<hr/>
-<p>【下付文字】</p>
-<p>水はCO<span class="sub">2</span>です。</p>
+<p>【イタリック】</p>
+<p>欧文の <span class="italic">New York Times</span> は<span class="italic color-cyan">イタリック</span>（cyan 指定）です。</p>
+<p>欧文の <span class="italic bold">New York Times</span> は<span class="italic bold">イタリックボールド</span>です。</p>
+<p>欧文の <span class="italic gfont">New York Times</span> は<span class="italic gfont">ゴシックイタリック</span>です。</p>
+<p>イタリックにルビをつける→<span class="italic gfont"><ruby>New York Times<rt>ニューヨーク</rt></ruby></span>、<span class="italic gfont"><ruby>太字斜体<rt>ゴシックイタリック</rt></ruby></span></p>
+<p><span class="italic">和文全体を、「イタリック」に指定しています。</span></p>
 <hr/>
 
 
-<!--
-<p style="font-family: serif; color:#f00;">【サロゲートペア】</p>
-<p style="font-family: serif;">𠀋𠂉𠂢𠂤𠆢𠈓𠌫𠍱𠎁𠏹𠑊𠔉𠗖𠘨𠝏𠠇𠠺𠢹𠥼𠦝𠫓𠬝𠮟𠵅𠷡𠹤𠹭𠺕𠽟𡈁𡈽𡉕𡉴𡉻𡋗𡋤𡋽𡌛𡌶𡍄𡏄𡑭𡑮𡗗𡙇𡚴𡜆𡝂𡢽𡧃𡱖𡴭𡵅𡵢𡵸𡶒𡶜𡶡𡶷𡷠𡸳𡸴𡼞𡽶𡿺𢅻𢈘𢌞𢎭𢛳𢡛𢢫𢦏𢪸𢭆𢭏𢭐𢮦𢰝𢰤𢷡𣆶𣇃𣇄𣇵𣍲𣏐𣏒𣏓𣏕𣏚𣏟𣏤𣑊𣑋𣑑𣑥𣓤𣕚𣖔𣗄𣘸𣘹𣘺𣙇𣜌𣜜𣜿𣝣𣝤𣟧𣟿𣠤𣠽𣪘𣱿𣳾𣴀𣴎𣵀𣷓𣷹𣷺𣽾𤂖𤄃𤇆𤇾𤎼𤘩𤚥𤟱𤢖𤩍𤭖𤭯𤰖𤴔𤸎𤸷𤹪𤺋𥁊𥁕𥄢𥆩𥇍𥇥𥈞𥉌𥐮𥒎𥓙𥔎𥖧𥝱𥞩𥞴𥧄𥧔𥫣𥫤𥫱𥮲𥱋𥱤𥶡𥸮𥹖𥹢𥹥𥻂𥻘𥻨𥼣𥽜𥿔𥿠𥿻𦀌𦀗𦁠𦃭𦉰𦊆𦍌𦐂𦙾𦚰𦜝𦣝𦣪𦥑𦥯𦧝𦨞𦩘𦪌𦪷𦫿𦰩𦱳𦳝𦹀𦹥𦾔𦿶𦿷𦿸𧃴𧄍𧄹𧏚𧏛𧏾𧐐𧑉𧘔𧘕𧘱𧚄𧚓𧜎𧜣𧝒𧦅𧪄𧮳𧮾𧯇𧲸𧶠𧸐𧾷𨂊𨂻𨉷𨊂𨋳𨏍𨐌𨑕𨕫𨗈𨗉𨛗𨛺𨥆𨥉𨥫𨦇𨦈𨦺𨦻𨨞𨨩𨩃𨩱𨪙𨫍𨫝𨫤𨯁𨯯𨴐𨵱𨷻𨸟𨸶𨺉𨻫𨼲𨿸𩊠𩊱𩒐𩗏𩙿𩛰𩜙𩝐𩣆𩩲𩷛𩸕𩸽𩹉𩺊𩻄𩻛𩻩𩿎𪀚𪀯𪂂𪃹𪆐𪎌𪐷𪗱𪘂𪘚𪚲</p>
-<p>【２００４外】</p>
-<p>笄→&#x7B53;、胼→&#x8141;、臈→&#xFA1F;、駢→&#x9A08;、迸→&#x902C;（逬）</p>
-<hr/>
-<p>【アクセント付きアルファベット】</p>
-<p>ÀÁÂÃÄÅÆÇÉÌÍÎÏÑÒÓÔÕÖØÙÚÛÜßàáâãäåæçèéêëìíîïñòóôõöøùúûüÿŸŒ</p>
-<hr/>
-<p><span class="gfont">【ゴシック文字ベースライン検証】</span></p>
-<p><span class="gfont">「は～～～ら～～～に～～～く～～～ぅぅ<span class="tcy">!!</span>」</span></p>
-<p><span class="gfont">「会いたい……ひろしくん、あきらくん、ジョセフィーヌ……」</span></p>
-<p><span class="gfont">きしゃ―――っ！</span></p>
-<p><span class="gfont">武長くんと、デート<span class="tcy">!?</span></span></p>
-<p><span class="gfont">水滸伝（一）</span></p>
- -->
+
+
+
+
 </div>
 </body>
 
