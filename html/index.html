@@ -49,7 +49,7 @@
       margin-left: 30px;
     }*/
   </style>
-  <script>
+  <!-- <script>
         // .replace(new RegExp('『', 'g'), '*');
     onload = function(){
       document.body.innerHTML = document.body.innerHTML
@@ -61,7 +61,7 @@
           document.body.innerHTML = document.body.innerHTML.replace(new RegExp(startBrackets[i]+'<ruby>', 'g'), '<ruby>'+startBrackets[i]+'<rt></rt>');
         }
       };
-  </script>
+  </script> -->
 <style type="text/css" media="screen">
   /**
  *  Style.css
@@ -388,43 +388,151 @@ p, span, div {
 
 </head>
 
-<!-- <body class="main-top bg-orangered vrtl">
-  <div class="main">
-    <p>このページは、背景色がページ全体に反映されているかどうかと、画像外字の透過を確認するためのものです。</p>
-    <p>この画像は<img class="gaiji" src="../image/toka_test.png" alt=""/>透過pngでつくりました。</p>
-    <p>この画像は<img class="gaiji" src="../image/voyager_test.png" alt=""/>透過ではありません。</p>
-  </div>
-</body> -->
-
 <!--
  <body class="info-top hltr">
   <div class="main" style="width: 303px">
     <p><span class="gfont font-120per">著者：浅田次郎</span></p>
-    <p>吾輩わが『<ruby>何でも薄暗いじめじめした所</ruby>』でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかも</p>
-    <p>1951年東京都生まれ。1995年『<ruby>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt></ruby>に乗って』で吉川英治文学新人賞、1997年『<ruby>鉄道員<rt>ぽつぽや</rt></ruby>』で直木賞、2000年『<ruby>壬<rt>み</rt>生<rt>ぶ</rt></ruby>義士伝』で柴田錬三郎賞、2006年『お腹召しませ』で中央公論文芸賞、司馬<img class="gaiji" src="../image/uf9c3.png" alt=""/>太郎賞、2008年には『中原の虹』で吉川英治文学賞を受賞する。<span class="gfont bold">『<ruby>日<rt>にち</rt>輪<rt>りん</rt></ruby>の<ruby>遺<rt>い</rt>産<rt>さん</rt></ruby>』</span><span class="gfont">『<ruby>霞<rt>かすみ</rt>町<rt>ちよう</rt>物<rt>もの</rt>語<rt>がたり</rt></ruby>』</span>『<span class="bold italic"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』『<span class="gfont italic"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』『<span class="kasen"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』<span class="gfont">『<ruby>歩<rt>ほ</rt>兵<rt>へい</rt></ruby>の<ruby>本<rt>ほん</rt>領<rt>りよう</rt></ruby>』</span>、エッセイ『<span class="em-dot">勇気凜凜ルリの色</span>』シリーズなど著書多数。講談社創業100周年記念作品として、『<span class="gfont italic">蒼穹の昴</span>』（ゴシック・イタリック）、本作品、『<span class="bold italic">中原の虹</span>』（太字・イタリック）から連なる中国シリーズ最新作<span class="bosen">『マンチュリアン・リポート』</span>を刊行。</p>
+    <p>吾輩わがはいはねこねこねこねこねここね<span style="display: inline-block;">『<ruby>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt></ruby>』</span>でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかも</p>
+    <p>1951年東京都生まれ。1995年『<ruby>地<rt>メ</rt>下<rt>ト</rt>鉄<rt>ロ</rt></ruby>に乗って』で吉川英治文学新人賞、1997年『<ruby>鉄道員<rt>ぽつぽや</rt></ruby>』で直木賞、2000年『<ruby>壬<rt>み</rt>生<rt>ぶ</rt></ruby>義士伝』で柴田錬三郎賞、2006年『お腹召しませ』で中央公論文芸賞、司馬<img class="gaiji" src="../image/uf9c3.png" alt=""/>太郎賞、2008年には『中原の虹』で吉川英治文学賞を受賞する。<span class="gfont bold"><span style="display: inline-block;">『<ruby>日<rt>にち</rt>輪<rt>りん</rt></ruby>の<ruby>遺<rt>い</rt>産<rt>さん</rt></ruby>』</span></span><span class="gfont"><span style="display: inline-block;">『<ruby>霞<rt>かすみ</rt>町<rt>ちよう</rt>物<rt>もの</rt>語<rt>がたり</rt></ruby>』</span></span>『<span class="bold italic"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』『<span class="gfont italic"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』『<span class="kasen"><ruby>Scheherazade<rt>シエラザード</rt></ruby></span>』<span class="gfont">『<ruby>歩<rt>ほ</rt>兵<rt>へい</rt></ruby>の<ruby>本<rt>ほん</rt>領<rt>りよう</rt></ruby>』</span>、エッセイ『<span class="em-dot">勇気凜凜ルリの色</span>』シリーズなど著書多数。講談社創業100周年記念作品として、『<span class="gfont italic">蒼穹の昴</span>』（ゴシック・イタリック）、本作品、『<span class="bold italic">中原の虹</span>』（太字・イタリック）から連なる中国シリーズ最新作<span class="bosen">『マンチュリアン・リポート』</span>を刊行。</p>
   </div>
-</body> -->
+</body>
+ -->
 <body class="main-top">
-  <div class="main">
-    <h2 class="font-120per">第一章　文字表示の基本形</h2>
-
-    <p>【画像外字に訓点、上付、下付を指定】</p>
-    <p>画像<span class="kunten"><img class="gaiji" src="../image/hyphen_reten.png" alt=""/></span>画像<span class="super"><img class="gaiji" src="../image/paren_a.png" alt=""/></span>画像<span class="sub"><img class="gaiji" src="../image/paren_a.png" alt=""/></span>画像</p>
-    <hr/>
-    <p>【小書き文字】</p>
-    <p>古池や　蛙飛<span class="kogaki">ン</span>だる　水の音</p>
-    <hr/>
-    <p>【上付文字】</p>
-    <p>上付き文字はA<span class="super">2</span>です。</p>
-    <hr/>
-    <p>【下付文字】</p>
-    <p>水はCO<span class="sub">2</span>です。</p>
-    <hr/>
-    <div class="start-1em">
-      <h3 class="gfont font-110per">２　その他</h3>
-    </div>
-
-  </div>
+<div class="main">
+<h2 class="font-120per">第一章　文字表示の基本形</h2>
+<div class="start-4em">
+<p><span class="subtitle">──表示確認のための例</span></p>
+</div>
+<p><br/></p>
+<div class="start-1em">
+<h3 class="gfont font-110per">１　文字修飾</h3>
+</div>
+<p><br/></p>
+<hr/>
+<p>【ルビ＋外字画像】</p>
+<p><ruby>外<rt>がい</rt>字<rt>じ</rt>画<rt>が</rt>像<rt>ぞう</rt><img class="gaiji" src="../image/u9b09.png" alt=""/><rt>ためし</rt>表<rt>ひよう</rt>示<rt>じ</rt></ruby></p>
+<p><br/></p>
+<p>【長いルビ試し】</p>
+<p>園にルビをつけ、<ruby>園<rt>●●●</rt>園<rt>●●●●</rt>園<rt>●●●</rt>園<rt>●●●</rt></ruby>に<ruby>園<rt>▼▼▼</rt>園<rt>▼▼▼▼</rt>園<rt>▼▼▼</rt>園<rt>▼▼▼</rt></ruby>として、被ルビ間のあきを確認。</p>
+<p>　その<ruby>一<rt>いっ</rt>報<rt>ぽう</rt></ruby>を<ruby>受<rt>う</rt></ruby>け、<ruby>日<rt>に</rt>本<rt>ほん</rt>医<rt>い</rt>科<rt>か</rt>大<rt>だい</rt>学<rt>がく</rt>千<rt>ち</rt>葉<rt>ば</rt>北<rt>ほく</rt>総<rt>そう</rt>病<rt>びょう</rt>院<rt>いん</rt></ruby>、<ruby>救<rt>きゅう</rt>命<rt>めい</rt>救<rt>きゅう</rt>急<rt>きゅう</rt></ruby>センターのドクターとナースが、<ruby>大<rt>たい</rt>量<rt>りょう</rt></ruby>の<ruby>医<rt>い</rt>療<rt>りょう</rt>物<rt>ぶっ</rt>資<rt>し</rt></ruby>とともに<ruby>乗<rt>の</rt></ruby>りこんだのは、ドクターヘリ。</p>
+<p><br/></p>
+<p>【親ルビに部分的にサイズ指定】</p>
+<p><ruby>あいう<span class="font-080per">（えお）</span>かきく<rt>アイウエオカキク</rt></ruby></p>
+<p><ruby>あいう<rt>アイウ</rt><span class="font-080per">（えお）</span><rt>エオ</rt>かきく<rt>カキク</rt></ruby></p>
+<p><br/></p>
+<hr/>
+<p>【縦中横】</p>
+<p>半角欧文３文字<span class="tcy">ppm</span>と<span class="tcy">vs.</span>と<span class="tcy">-89</span>と<span class="tcy">'99</span>の縦中横確認。括弧囲み文字<span class="tcy">(5)</span>と<span class="tcy">(a)</span>も確認。</p>
+<p>リットル表示確認→【２桁】<span class="tcy">8ℓ</span>→【３桁】<span class="tcy">88ℓ</span></p>
+<p><br/></p>
+<hr/>
+<p>【ルビ＋縦中横】</p>
+<p>３階<ruby><span class="tcy">303</span><rt>さんまるさん</rt></ruby>の彼女は<ruby><span class="tcy">20</span>歳<rt>はたち</rt></ruby>です。</p>
+<p>この<ruby>Ｆ<span class="tcy">15</span>Ｊ<rt>イーグル</rt></ruby>に乗って</p>
+<p><br/></p>
+<hr/>
+<p>【傍線＋外字画像、または傍線＋縦中横】</p>
+<p>傍線指定の確認のため、<span class="bosen">傍線開始<img class="gaiji" src="../image/maru_tamesi.png" alt=""/>傍線ここまで</span>指定して、<span class="bosen">傍線開始<span class="tcy">12</span>傍線ここまで</span>指定。</p>
+<p><br/></p>
+<p>【ルビ＋傍線＋外字画像】</p>
+<p>「<span class="bosen"><ruby>外<rt>がい</rt>字<rt>じ</rt>画<rt>が</rt>像<rt>ぞう</rt><img class="gaiji" src="../image/maru_tamesi.png" alt=""/><rt>ためし</rt>表<rt>ひよう</rt>示<rt>じ</rt></ruby></span>」</p>
+<p><br/></p>
+<p>【傍線──長い行に指定】</p>
+<p><span class="bosen">長い行全体に傍線指定をした場合、画面からはみ出さないかどうか要確認。この行全体に傍線指定。</span></p>
+<p><br/></p>
+<p>【半角欧文に傍線指定】</p>
+<p>横転した欧文、<span class="kasen">Any underlines should be placed at the left side of the line.</span> 左側に下線がつくかどうか、確認する。</p>
+<hr/>
+<p>【傍線に色指定】</p>
+<p><span class="bosen k-red">赤い傍線</span>と <span class="kasen k-blue">a blue underline</span>（青い下線）。</p>
+<hr/>
+<p>【太字・ゴシック】</p>
+<p>ＡとＢの間の文字列〈Ａ<span class="bold">ここは太い字</span>Ｂ〉は太字です。こちらの文字列〈<span class="bold italic">Bold Italic</span>〉は太字＋イタリックです。こちらの文字列〈<span class="bold gfont">ゴシック太字</span>〉は太字＋ゴシックです。</p>
+<p><span class="bold gfont">ゴシック<ruby>太<rt>ふと</rt>字<rt>じ</rt></ruby></span>にルビをふりました。</p>
+<p>ゴシック文字<span class="gfont"><ruby>強調<rt>ゴシック</rt></ruby></span>にルビをふりました。</p>
+<p><br/></p>
+<hr/>
+<p>【イタリック】</p>
+<p>欧文の <span class="italic">New York Times</span> は<span class="italic color-cyan">イタリック</span>（cyan 指定）です。</p>
+<p>欧文の <span class="italic bold">New York Times</span> は<span class="italic bold">イタリックボールド</span>です。</p>
+<p>欧文の <span class="italic gfont">New York Times</span> は<span class="italic gfont">ゴシックイタリック</span>です。</p>
+<p>イタリックにルビをつける→<span class="italic gfont"><ruby>New York Times<rt>ニューヨーク</rt></ruby></span>、<span class="italic gfont"><ruby>太字斜体<rt>ゴシックイタリック</rt></ruby></span></p>
+<p><span class="italic">和文全体を、「イタリック」に指定しています。</span></p>
+<hr/>
+<p>【傍点・圏点】</p>
+<p><span class="em-sesame">黒ゴマ</span>、<span class="em-sesame-open">白ゴマ</span>、<span class="em-dot">黒丸</span>、<span class="em-dot-open">白丸</span>、<span class="em-circle">黒丸</span>、<span class="em-circle-open">白丸</span>、<span class="em-double-circle">二重丸</span>、<span class="em-double-circle-open">白二重丸</span>、<span class="em-triangle">黒三角</span>、<span class="em-triangle-open">白三角</span>。</p>
+<p><br/></p>
+<p>【半角欧文に指定した圏点】</p>
+<p>単語の一部につけて「<span class="em-dot">m</span>achinary and <span class="em-dot">in</span>struments <span class="em-dot">o</span>ptica<span class="em-dot">l</span> by <span class="em-dot">T</span>ashima」とする。</p>
+<p><br/></p>
+<p>【外字画像＋傍点】</p>
+<p>「<span class="em-sesame">外字画像<img class="gaiji" src="../image/maru_tamesi.png" alt=""/>に傍点をつける</span>」</p>
+<hr/>
+<p>【打ち消し線】</p>
+<p>ＡとＢの間の文字列〈Ａ<span class="line-through">ここは打ち消し</span>Ｂ〉は打ち消し線で打ち消されています。</p>
+<hr/>
+<p>【文字色反転】</p>
+<p>太陽磁場の<span class="inverse">極性反転</span>メカニズム。赤い背景<span class="inverse-red">極性反転</span>。</p>
+<p>反転文字にルビをつけた例→<span class="inverse"><ruby>部<rt class="color-black">ぶ</rt>分<rt class="color-black">ぶん</rt>反<rt class="color-black">はん</rt>転<rt class="color-black">てん</rt></ruby></span>←ルビは黒色指定</p>
+<hr/>
+<p>【訓点】</p>
+<p><ruby>未<span class="kunten">四</span>曾有<span class="kunten">三</span><rt>いまだかつて</rt></ruby><ruby>一事不<span class="kunten">レ</span>被<span class="kunten">二</span><rt>いちじのむじように</rt></ruby><ruby>無常呑<span class="kunten">一</span><rt>のまれざるはあらず</rt></ruby></p>
+<p>世上所<span class="kunten-okuri">ノ</span><span class="kunten">レ</span>有実事<span class="kunten-okuri">ナリ</span></p>
+<hr/>
+<p>【画像外字に訓点、上付、下付を指定】</p>
+<p>画像<span class="kunten"><img class="gaiji" src="../image/hyphen_reten.png" alt=""/></span>画像<span class="super"><img class="gaiji" src="../image/paren_a.png" alt=""/></span>画像<span class="sub"><img class="gaiji" src="../image/paren_a.png" alt=""/></span>画像</p>
+<hr/>
+<p>【小書き文字】</p>
+<p>古池や　蛙飛<span class="kogaki">ン</span>だる　水の音</p>
+<hr/>
+<p>【上付文字】</p>
+<p>上付き文字はA<span class="super">2</span>です。</p>
+<hr/>
+<p>【下付文字】</p>
+<p>水はCO<span class="sub">2</span>です。</p>
+<hr/>
+<div class="start-1em">
+<h3 class="gfont font-110per">２　その他</h3>
+</div>
+<p><br/></p>
+<hr/>
+<p>【注などのリンク】</p>
+<p>太陽磁場<a href="kd999999_0008.xhtml#note_a_01"><span class="gfont font-090per">（注<span class="tcy">1</span>）</span></a>のメカニズム</p>
+<hr/>
+<p>【ダブルクオテーション】</p>
+<p>〝一日中〟繰り返された。</p>
+<hr/>
+<p>【丸シー表記】</p>
+<p>【横向き】<span class="sideways">©</span>Kodansha 2012</p>
+<p>【縦書き】<span class="upright">©</span>講談社</p>
+<hr/>
+<p>【縦書き時に正立する文字】</p>
+<p>、。・゛゜ヽヾゝゞ〃々〆〇×♂♀℃§☆★○●◎◇◆□■△▲▽▼※〒〻〼ヿゟ♯♭♪♮♫♬♩◯▷▶◁◀◉〽﹆﹅◦㏋♤♠♢♦♡♥♧♣⓵⓶⓷⓸⓹⓺⓻⓼⓽⓾☖☗〠☎☀☁☂☃♨▱ㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿヷヸヹヺ⅓⅔⅕✓⌘㉑㉒㉓㉔㉕㉖㉗㉘㉙㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾㊿◐◑◒◓¼½¾❶❷❸❹❺❻❼❽❾❿⓫⓬⓭⓮⓯⓰⓱⓲⓳⓴ⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹⅺⅻⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ㋐㋑㋒㋓㋔㋕㋖㋗㋘㋙㋚㋛㋜㋝㋞㋟㋠㋡㋢㋣㋺㋩㋥㋭㋬①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪ㍉㌔㌢㍍㌘㌧㌃㌶㍑㍗㌍㌦㌣㌫㍊㌻㎜㎝㎞㎎㎏㏄㎡Ⅻ㍻№㏍㊤㊥㊦㊧㊨㈱㈲㈹㍾㍽㍼❖！＂＃＄％＆＇＊＋，．／０１２３４５６７８９？＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ＼＾｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ￠￡￢￤￥</p>
+<hr/>
+<p>【縦書き時に回転する文字】</p>
+<p>,.:;?!´`^‾_ー—‐/〜|…‥()〔〕[]{}〈〉《》「」『』【】+−=≠&lt;&gt;≦≧°′″¥$%#&amp;*@→←↑↓'"-~∈∋⊆⊇⊂⊃∪∩⊄⊅⊊⊋∉∅∧（論理積）∨（論理和）¬⊕⊖⊗∥∦｟｠〘〙〖〗≡≒≪≫≢≃≅≈≶≷⤴⤵⦿•∓゠–⧺⧻⋚⋛─│┌┐┘└├┬┤┴┼━┃┏┓┛┗┣┳┫┻╋┠┯┨┷┿┝┰┥┸╂ǍǎǐḾḿǸǹǑǒǔǖǘǚǜ€¡¤¦ª«­（SOFT HYPHEN）¯²³·¸¹º»¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀĪŪĒŌāīūēōĄ˘ŁĽŚŠŞŤŹŽŻą˛łľśšşťź˝žżŔĂĹĆČĘĚĎŃŇŐŘŮŰŢŕăĺćčęěďđńňőřůűţĈĜĤĴŜŬĉĝĥĵŝŭɱʋɾʃʒɬɮɹʈɖɳɽʂʐɻɭɟɲʝʎɡŋɰʁħʕʔɦʘǂɓɗʄɠƓœŒɨʉɘɵəɜɞɐɯʊɤʌɔɑɒʍɥʢʡɕʑɺɧɚǽὰάὲέˈˌːˑ‿˥˦˧˨˩〝〟∮∟⊿―（）－：＜（括弧代わり）＝＞（括弧代わり）［］＿｛｜｝～￣</p>
+<hr/>
+<p>【印刷標準字体】</p>
+<p>辻、溢、杓、蝕、穿、煎</p>
+<hr/>
+<p>【正字】</p>
+<p>唖→啞、嘘→噓、焔→焰、鴎→鷗、噛→嚙、侠→俠、倶→俱、躯→軀、繋→繫、鹸→鹼、麹→麴、屡→屢、繍→繡、蒋→蔣、醤→醬、蝉→蟬、掻→搔、痩→瘦、騨→驒、箪→簞、掴→摑、填→塡、顛→顚、祷→禱、涜→瀆、嚢→囊、剥→剝、溌→潑、醗→醱、頬→頰、麺→麵、莱→萊、蝋→蠟、妍→姸、屏→屛、并→幷、攅→攢</p>
+<hr/>
+<p>【サロゲートペア】</p>
+<p>𠀋𠂉𠂢𠂤𠆢𠈓𠌫𠍱𠎁𠏹𠑊𠔉𠗖𠘨𠝏𠠇𠠺𠢹𠥼𠦝𠫓𠬝𠮟𠵅𠷡𠹤𠹭𠺕𠽟𡈁𡈽𡉕𡉴𡉻𡋗𡋤𡋽𡌛𡌶𡍄𡏄𡑭𡑮𡗗𡙇𡚴𡜆𡝂𡢽𡧃𡱖𡴭𡵅𡵢𡵸𡶒𡶜𡶡𡶷𡷠𡸳𡸴𡼞𡽶𡿺𢅻𢈘𢌞𢎭𢛳𢡛𢢫𢦏𢪸𢭆𢭏𢭐𢮦𢰝𢰤𢷡𣆶𣇃𣇄𣇵𣍲𣏐𣏒𣏓𣏕𣏚𣏟𣏤𣑊𣑋𣑑𣑥𣓤𣕚𣖔𣗄𣘸𣘹𣘺𣙇𣜌𣜜𣜿𣝣𣝤𣟧𣟿𣠤𣠽𣪘𣱿𣳾𣴀𣴎𣵀𣷓𣷹𣷺𣽾𤂖𤄃𤇆𤇾𤎼𤘩𤚥𤟱𤢖𤩍𤭖𤭯𤰖𤴔𤸎𤸷𤹪𤺋𥁊𥁕𥄢𥆩𥇍𥇥𥈞𥉌𥐮𥒎𥓙𥔎𥖧𥝱𥞩𥞴𥧄𥧔𥫣𥫤𥫱𥮲𥱋𥱤𥶡𥸮𥹖𥹢𥹥𥻂𥻘𥻨𥼣𥽜𥿔𥿠𥿻𦀌𦀗𦁠𦃭𦉰𦊆𦍌𦐂𦙾𦚰𦜝𦣝𦣪𦥑𦥯𦧝𦨞𦩘𦪌𦪷𦫿𦰩𦱳𦳝𦹀𦹥𦾔𦿶𦿷𦿸𧃴𧄍𧄹𧏚𧏛𧏾𧐐𧑉𧘔𧘕𧘱𧚄𧚓𧜎𧜣𧝒𧦅𧪄𧮳𧮾𧯇𧲸𧶠𧸐𧾷𨂊𨂻𨉷𨊂𨋳𨏍𨐌𨑕𨕫𨗈𨗉𨛗𨛺𨥆𨥉𨥫𨦇𨦈𨦺𨦻𨨞𨨩𨩃𨩱𨪙𨫍𨫝𨫤𨯁𨯯𨴐𨵱𨷻𨸟𨸶𨺉𨻫𨼲𨿸𩊠𩊱𩒐𩗏𩙿𩛰𩜙𩝐𩣆𩩲𩷛𩸕𩸽𩹉𩺊𩻄𩻛𩻩𩿎𪀚𪀯𪂂𪃹𪆐𪎌𪐷𪗱𪘂𪘚𪚲</p>
+<p>【２００４外】</p>
+<p>笄→&#x7B53;、胼→&#x8141;、臈→&#xFA1F;、駢→&#x9A08;、迸→&#x902C;（逬）</p>
+<hr/>
+<p>【アクセント付きアルファベット】</p>
+<p>ÀÁÂÃÄÅÆÇÉÌÍÎÏÑÒÓÔÕÖØÙÚÛÜßàáâãäåæçèéêëìíîïñòóôõöøùúûüÿŸŒ</p>
+<hr/>
+<p><span class="gfont">【ゴシック文字ベースライン検証】</span></p>
+<p><span class="gfont">「は～～～ら～～～に～～～く～～～ぅぅ<span class="tcy">!!</span>」</span></p>
+<p><span class="gfont">「会いたい……ひろしくん、あきらくん、ジョセフィーヌ……」</span></p>
+<p><span class="gfont">きしゃ―――っ！</span></p>
+<p><span class="gfont">武長くんと、デート<span class="tcy">!?</span></span></p>
+<p><span class="gfont">水滸伝（一）</span></p>
+</div>
 </body>
 
 </html>
