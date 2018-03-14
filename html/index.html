@@ -387,11 +387,9 @@ p, span, div {
 
 .italic{
   font-style: initial!important;
--moz-transform: skew(-20deg,-20deg);
--webkit-transform: skew(-20deg,-20deg);
--o-transform: skew(-20deg,-20deg);
--ms-transform: skew(-20deg,-20deg);
-transform: skew(-20deg,-20deg);
+  display: inline-block;
+-webkit-transform: skewY(-20deg);
+transform: skewY(-20deg);
 }
 </style>
 
@@ -411,6 +409,7 @@ transform: skew(-20deg,-20deg);
 <p>欧文の <span class="italic gfont">New York Times</span> は<span class="italic gfont">ゴシックイタリック</span>です。</p>
 <p>イタリックにルビをつける→<span class="italic gfont"><ruby>New York Times<rt>ニューヨーク</rt></ruby></span>、<span class="italic gfont"><ruby>太字斜体<rt>ゴシックイタリック</rt></ruby></span></p>
 <p><span class="italic">和文全体を、「イタリック」に指定しています。</span></p>
+<p><img src="https://placehold.jp/150x150.png" alt=""> </p>
 <hr/>
 
 
