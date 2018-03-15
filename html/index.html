@@ -478,10 +478,10 @@ display: inline-block;}
 window.onload = function() {
   var testElements = document.getElementsByClassName('tcy');
   Array.prototype.filter.call(testElements, function(testElement){
-    console.log("innerHTML → " + testElement.innerHTML);
     if (!testElement.innerHTML.match(/^[\x20-\x40]+$/)) {
-      console.log("数字・記号以外がある");
-      testElement.classList.add("tcy-char");
+      if (!testElement.innerHTML.match(/^[\x28-\x29]/)) {
+        testElement.classList.add("tcy-char");
+      }
     }
   });
 };
