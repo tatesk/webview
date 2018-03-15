@@ -444,30 +444,39 @@ display: inline-block;}
 
 </body>
 <script type="text/javascript">
-window.onload = function() {
-  var testElements = document.getElementsByClassName('tcy');
-  Array.prototype.filter.call(testElements, function(testElement){
-    console.log("innerHTML → " + testElement.innerHTML);
-    if (!testElement.innerHTML.match(/^[\x20-\x40]+$/)) {
-      if (!testElement.innerHTML.match(/^[\x28-\x29]/)) {
-        testElement.classList.add("tcy-char");
-      }
-    };
-    //2バイト文字なら
-    if (!testElement.innerHTML.match(/^[\x00-\xff]+$/)) {
-      var beforeText = testElement.innerHTML
-      var beforeTextArr = beforeText.split('');
-      var afterText = '';
-      for (var i = 0; i < beforeTextArr.length; i++) {
-        if (!beforeTextArr[i].match(/^[\x00-\xff]+$/)) {
-          afterText += '<span class="tcy-char-2byte">' + beforeTextArr[i] + '</span>';
-        } else{
-          afterText += beforeTextArr[i];
-        }
-      }
-      testElement.innerHTML = afterText;
+  var iOSver = function(){
+    if (/iP(hone|od|ad)/.test(navigator.platform)) {
+      var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+      return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
     }
-  });
+  }
+  var manualTCY = function(){
+    var tcys = document.getElementsByClassName('tcy');
+    Array.prototype.filter.call(tcys, function(tcy){
+      var tcyHTML = tcy.innerHTML;
+      if (!tcyHTML.match(/^[\x20-\x40]+$/)) {
+        if (!tcyHTML.match(/^[\x28-\x29]/)) {
+          tcy.classList.add("tcy-char");
+        }
+      };
+      if (!tcyHTML.match(/^[\x00-\xff]+$/)) {
+        var beforeText = tcyHTML
+        var beforeTextArr = beforeText.split('');
+        var afterText = '';
+        for (var i = 0; i < beforeTextArr.length; i++) {
+          if (!beforeTextArr[i].match(/^[\x00-\xff]+$/)) {
+            afterText += '<span class="tcy-char-2byte">' + beforeTextArr[i] + '</span>';
+          } else{
+            afterText += beforeTextArr[i];
+          }
+        }
+        tcy.innerHTML = afterText;
+      }
+    });
+  }
+window.onload = function() {
+  console.log(iOSver());
+  manualTCY();
 };
 </script>
 
