@@ -447,7 +447,7 @@ display: inline-block;}
   var iOSver = function(){
     if (/iP(hone|od|ad)/.test(navigator.platform)) {
       var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-      return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+      return parseInt(v[1], 10);
     }
   }
   var manualTCY = function(){
@@ -475,8 +475,9 @@ display: inline-block;}
     });
   }
 window.onload = function() {
-  console.log(iOSver());
-  manualTCY();
+  if(iOSver() == 8){
+    manualTCY();
+  }
 };
 </script>
 
