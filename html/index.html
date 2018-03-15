@@ -474,19 +474,18 @@ display: inline-block;}
 </div>
 
 </body>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 window.onload = function() {
   var testElements = document.getElementsByClassName('tcy');
   Array.prototype.filter.call(testElements, function(testElement){
     console.log("innerHTML → " + testElement.innerHTML);
-    if (testElement.innerHTML.match(/^[\x20-\x40]+$/)) {
-      console.log("すべて数字か記号");
-    } else{
+    if (!testElement.innerHTML.match(/^[\x20-\x40]+$/)) {
       console.log("数字・記号以外がある");
+      testElement.classList.add("tcy-char");
     }
   });
 };
 </script>
- -->
+
 
 </html>
