@@ -1,0 +1,496 @@
+@charset "UTF-8";
+
+
+/* ファイル情報
+----------------------------------------------------------------
+【内容】
+講談社仕様スタイル
+
+【バージョン】
+ver.1.4
+
+【細目】
+・作品別カスタマイズ領域
+
+【更新履歴】
+2012/08/15 ver.1.1
+2013/03/07 ver.1.2
+※bosenの宣言の記述を変更しました。
+※kasenを追加しました。
+2013/04/19 ver.1.3
+※縦書きの扉に右寄せ表示のスタイルを追加しました。
+2013/10/09
+※画像のみのページにマージン「０」の指定を追加しました。
+2014/04/25
+※「突き出しインデント」と「字下げ」の11～15字分のスタイルを追加しました。
+2014/07/01
+※「突き出しインデント」と「字下げ」の11～15字分のスタイルに縦横入れ子用のスタイルを追加しました。
+※傍線にヨコ組時のタテ書きの入れ子用スタイルを追加しました。
+2014/11/17
+※「text-align-last: auto;」を削除しました。
+※使っていない不要なスタイルを削除しました。
+※文字色と背景色を追加しました。
+※heightとwidthの文字サイズ指定を追加しました。
+2015/11/05
+※ボックスの高さと幅を決めるmeasureとextentに「16-em」～「19-em」を追加
+※heightとwidthに「16-em」～「19-em」を追加
+---------------------------------------------------------------- */
+
+
+/* 字下げ11～15字下げスタイル追加
+---------------------------------------------------------------- */
+/* 字下げ：横組み用 */
+.hltr .start-11em  { margin-left: 11.00em; }
+.hltr .start-12em  { margin-left: 12.00em; }
+.hltr .start-13em  { margin-left: 13.00em; }
+.hltr .start-14em  { margin-left: 14.00em; }
+.hltr .start-15em  { margin-left: 15.00em; }
+
+/* 字下げ：縦組み用 */
+.vrtl .start-11em  { margin-top: 11.00em; }
+.vrtl .start-12em  { margin-top: 12.00em; }
+.vrtl .start-13em  { margin-top: 13.00em; }
+.vrtl .start-14em  { margin-top: 14.00em; }
+.vrtl .start-15em  { margin-top: 15.00em; }
+
+/* 【組み方向の入れ子対策】字下げ・字上げ指定
+---------------------------------------------------------------- */
+/* .hltr .vrtl [class|="start"] { margin-left: 0; } */
+.hltr .vrtl .start-11em,   .hltr .vrtl .start-12em,   .hltr .vrtl .start-13em,
+.hltr .vrtl .start-14em,   .hltr .vrtl .start-15em {
+  margin-left: 0;
+}
+/* .vrtl .hltr [class|="start"] { margin-top:  0; } */
+.vrtl .hltr .start-11em,   .vrtl .hltr .start-12em,   .vrtl .hltr .start-13em,
+.vrtl .hltr .start-14em,   .vrtl .hltr .start-15em {
+  margin-top: 0;
+}
+
+/* 突き出しインデント（ぶら下がりインデント）11～15字追加
+---------------------------------------------------------------- */
+/* 横組み用 */
+.hltr .h-indent-11em { text-indent: -11em; padding-left: 11em; }
+.hltr .h-indent-12em { text-indent: -12em; padding-left: 12em; }
+.hltr .h-indent-13em { text-indent: -13em; padding-left: 13em; }
+.hltr .h-indent-14em { text-indent: -14em; padding-left: 14em; }
+.hltr .h-indent-15em { text-indent: -15em; padding-left: 15em; }
+
+/* 縦組み用 */
+.vrtl .h-indent-11em { text-indent: -11em; padding-top: 11em; }
+.vrtl .h-indent-12em { text-indent: -12em; padding-top: 12em; }
+.vrtl .h-indent-13em { text-indent: -13em; padding-top: 13em; }
+.vrtl .h-indent-14em { text-indent: -14em; padding-top: 14em; }
+.vrtl .h-indent-15em { text-indent: -15em; padding-top: 15em; }
+
+/* 【組み方向の入れ子対策】突き出しインデント（ぶら下がりインデント）
+---------------------------------------------------------------- */
+/* .hltr .vrtl [class|="h-indent"] { padding-left: 0; } */
+.hltr .vrtl .h-indent-11em, .hltr .vrtl .h-indent-12em, .hltr .vrtl .h-indent-13em,
+.hltr .vrtl .h-indent-14em, .hltr .vrtl .h-indent-15em {
+  padding-left: 0;
+}
+
+/* .vrtl .hltr [class|="h-indent"] { padding-top: 0; } */
+.vrtl .hltr .h-indent-11em, .vrtl .hltr .h-indent-12em, .vrtl .hltr .h-indent-13em,
+.vrtl .hltr .h-indent-14em, .vrtl .hltr .h-indent-15em {
+  padding-top: 0;
+}
+
+/* 行揃え
+---------------------------------------------------------------- */
+/* 行末揃え、３字頭下げ、横書き用 */
+.hltr .align-right,
+.vrtl .hltr .align-right {
+  text-align:      right;
+  padding-left:    3em;
+}
+/* 行末揃え、３字頭下げ、縦書き用 */
+.vrtl .align-right,
+.hltr .vrtl .align-right {
+  text-align:      right;
+  padding-top:     3em;
+}
+
+
+/* 傍線　横組で下、縦組で右側に表示される
+---------------------------------------------------------------- */
+.hltr .bosen,.vrtl .hltr .bosen {
+  border-width: 1px;
+  border-style: none none solid none;
+}
+.vrtl .bosen,.hltr .vrtl .bosen {
+  border-width: 1px;
+  border-style: none solid none none;
+}
+
+/* 下線　横組で下、縦組で左側に表示される
+---------------------------------------------------------------- */
+.hltr .kasen,.vrtl .hltr .kasen {
+  border-width: 1px;
+  border-style: none none solid none;
+}
+.vrtl .kasen,.hltr .vrtl .kasen {
+  border-width: 1px;
+  border-style: none none none solid;
+ }
+
+/* リンク指定
+---------------------------------------------------------------- */
+/*  */
+a:visited { color: #00008b; }
+
+
+/* カバーページ
+----------------------------------------------------------------
+描画領域の余白をゼロに
+デフォルトで左右中央揃えに
+---------------------------------------------------------------- */
+.cover-page .main {
+  margin:         0;
+  padding:        0;
+  text-align:     center;
+}
+
+/* 本扉
+---------------------------------------------------------------- */
+/* 横組み、左右中央 */
+.title-page .main {
+  margin:         0 0 0 0;
+  padding:        10% 5% 0 5%;
+  text-align:     center;
+  line-height:    1.75;
+}
+
+/* 目次
+---------------------------------------------------------------- */
+/* 均等割付なし */
+.contents-page .main {
+  text-align: left;
+}
+
+/* 扉
+---------------------------------------------------------------- */
+/* 横組み */
+body.tobira-page {
+}
+.tobira-page .tobira-yoko {
+  margin:         0 0 0 0;
+  padding:        10% 5% 0 5%;
+  text-align:     center;
+  line-height:    1.75;
+}
+
+/* 縦組み、左右中央 */
+/* htmlに「class="hltr"」を指定 */
+/* ------------------------
+指定の仕方
+<body class="tobira-page">
+<div class="vrtl block-align-center p-1em">
+--------------------------- */
+
+/* 縦組み、右寄せ表示 */
+/* htmlに「class="vrtl"」を指定 */
+/* ------------------------
+指定の仕方
+<body class="tobira-page">
+<div class="tobira-tate">
+--------------------------- */
+.tobira-page .tobira-tate {
+  margin:         0 0 0 0;
+  padding:        1em 5% 0 5%;
+  text-align:     left;
+  line-height:    1.75;
+}
+
+/* 本文
+---------------------------------------------------------------- */
+/* 右寄せ、天つき */
+.main-top .main {
+/* vertical-align: top; */
+}
+
+/* ttxで「左右中央、天つき」指定のページ */
+.vrtl .main-middle .main {
+  padding:        0 10% 0 10%;
+/* vertical-align: middle; */
+}
+.hltr .main-middle .main {
+  padding:        10% 0 10% 0;
+/* vertical-align: middle; */
+}
+
+/* 画像のみのページ
+----------------------------------------------------------------
+描画領域の余白をゼロに
+デフォルトで左右中央揃えに
+---------------------------------------------------------------- */
+.image-page .main {
+  margin:         0;
+  padding:        0;
+  text-align:     center;
+}
+
+/* 前書
+---------------------------------------------------------------- */
+/* 右寄せ、天つき */
+.mae-page .main {
+/* vertical-align: top; */
+}
+
+/* 後書
+---------------------------------------------------------------- */
+/* 右寄せ、天つき */
+.ato-page .main {
+/* vertical-align: top; */
+}
+
+/* 解説
+---------------------------------------------------------------- */
+/* 右寄せ、天つき */
+.kaisetsu-page .main {
+/* vertical-align: top; */
+}
+
+/* 参考資料、書誌情報、クレジットなど
+---------------------------------------------------------------- */
+/* 右寄せ、天つき */
+.info-top .main {
+  text-align:     left;
+/* vertical-align: top; */
+}
+
+/* ttxで「左右中央、天つき」指定のページ */
+.vrtl .info-middle .main {
+  text-align:     left;
+  padding:        0 10% 0 10%;
+/* vertical-align: middle; */
+}
+.hltr .info-middle .main {
+  text-align:     left;
+  padding:        10% 0 10% 0;
+/* vertical-align: middle; */
+}
+
+/* 奥付
+---------------------------------------------------------------- */
+.colophon-page .main {
+  text-align:     left;
+/* vertical-align: top; */
+}
+
+/* その他ページ別スタイル
+---------------------------------------------------------------- */
+/* デジタル追加文言ページの全体設定 */
+.vrtl .caution-page .main {
+  padding:        0 5% 0 5%;
+  font-size:      90%;
+  line-height:    1.6;
+}
+.hltr .caution-page .main {
+  padding:        5% 0 5% 0;
+  font-size:      90%;
+  line-height:    1.6;
+}
+
+/* --------------------------------------- */
+/* 奥付注意書き、文字色茶色、文字サイズ75% */
+.okuduke_caution {
+  color: #a52a2a;
+  font-size: 75%;
+}
+
+/* マーク用中身空のクラス名
+------------------------------------------------------------- */
+/* 扉 */
+.tobira {
+}
+
+/* 目次 */
+.contents {
+}
+
+/* タイトル */
+.title {
+}
+
+/* サブタイトル */
+.subtitle {
+}
+
+/* 著者 */
+.author {
+}
+
+/* クレジット */
+.credit {
+}
+
+/* 奥付 */
+.okuduke {
+}
+
+/* 注 */
+.footnote {
+}
+
+/* シリーズ */
+.series {
+}
+
+/* 追加文字色 */
+.color-darkcyan { color: #008b8b; }
+.color-coral { color: #ff7f50; }
+.color-teal { color: #008080; }
+.color-tomato { color: #ff6347; }
+.color-darkslategray { color: #2f4f4f; }
+.color-darkgreen { color: #006400; }
+.color-slategray { color: #708090; }
+.color-green { color: #008000; }
+.color-crimson { color: #dc143c; }
+.color-steelblue { color: #4682b4; }
+.color-mediumvioletred { color: #c71585; }
+.color-royalblue { color: #4169e1; }
+.color-seagreen { color: #2e8b57; }
+.color-deeppink { color: #ff1493; }
+.color-midnightblue { color: #191970; }
+.color-mediumseagreen { color: #3cb371; }
+.color-yellow { color: #ffff00; }
+.color-hotpink { color: #ff69b4; }
+.color-navy { color: #000080; }
+.color-gold { color: #ffd700; }
+.color-darkblue { color: #00008b; }
+.color-darkseagreen { color: #8fbc8f; }
+.color-orange { color: #ffa500; }
+.color-pink { color: #ffc0cb; }
+.color-mediumblue { color: #0000cd; }
+.color-darkorange { color: #ff8c00; }
+.color-goldenrod { color: #daa520; }
+.color-cornflowerblue { color: #6495ed; }
+.color-peru { color: #cd853f; }
+.color-darkgoldenrod { color: #b8860b; }
+.color-violet { color: #ee82ee; }
+.color-chocolate { color: #d2691e; }
+.color-sienna { color: #a0522d; }
+.color-orchid { color: #da70d6; }
+.color-maroon { color: #800000; }
+.color-limegreen { color: #32cd32; }
+.color-darkred { color: #8b0000; }
+.color-darkviolet { color: #9400d3; }
+.color-brown { color: #a52a2a; }
+.color-darkolivegreen { color: #556b2f; }
+.color-firebrick { color: #b22222; }
+.color-purple { color: #800080; }
+.color-indianred { color: #cd5c5c; }
+.color-indigo { color: #4b0082; }
+.color-olive { color: #808000; }
+.color-darkkhaki { color: #bdb76b; }
+.color-blueviolet { color: #8a2be2; }
+.color-salmon { color: #fa8072; }
+.color-slateblue { color: #6a5acd; }
+.color-cadetblue { color: #5f9ea0; }
+
+/* 追加背景色 */
+.bg-cornsilk { background-color: #fff8dc; }
+.bg-beige { background-color: #f5f5dc; }
+.bg-lightcyan { background-color: #e0ffff; }
+.bg-lavender { background-color: #e6e6fa; }
+.bg-pink { background-color: #ffc0cb; }
+.bg-thistle { background-color: #d8bfd8; }
+.bg-plum { background-color: #dda0dd; }
+.bg-khaki { background-color: #f0e68c; }
+.bg-orange { background-color: #ffa500; }
+.bg-yellow { background-color: #ffff00; }
+.bg-lightblue { background-color: #add8e6; }
+.bg-aquamarine { background-color: #7fffd4; }
+.bg-deepskyblue { background-color: #00bfff; }
+.bg-darkkhaki { background-color: #bdb76b; }
+.bg-green { background-color: #008000; }
+.bg-maroon { background-color: #800000; }
+.bg-purple { background-color: #800080; }
+.bg-darkblue { background-color: #00008b; }
+
+/* 追加フォントサイズ（％指定） */
+.font-055per { font-size:  55%; }
+.font-065per { font-size:  65%; }
+.font-095per { font-size:  95%; }
+.font-105per { font-size: 105%; }
+.font-115per { font-size: 115%; }
+.font-125per { font-size: 125%; }
+.font-135per { font-size: 135%; }
+.font-145per { font-size: 145%; }
+
+/* 追加文字数指定 height */
+.height-3em50  { height:  3.50em; }
+.height-4em50  { height:  4.50em; }
+.height-5em50  { height:  5.50em; }
+.height-6em50  { height:  6.50em; }
+.height-7em50  { height:  7.50em; }
+.height-8em50  { height:  8.50em; }
+.height-9em50  { height:  9.50em; }
+.height-10em50 { height: 10.50em; }
+.height-11em50 { height: 11.50em; }
+.height-12em50 { height: 12.50em; }
+.height-13em50 { height: 13.50em; }
+.height-14em50 { height: 14.50em; }
+.height-15em50 { height: 15.50em; }
+.height-16em { height: 16.00em; }
+.height-16em50 { height: 16.50em; }
+.height-17em { height: 15.00em; }
+.height-17em50 { height: 17.50em; }
+.height-18em { height: 18.00em; }
+.height-18em50 { height: 18.50em; }
+.height-19em { height: 19.00em; }
+.height-19em50 { height: 19.50em; }
+
+/* 追加文字数指定 width */
+.width-3em50  { width:  3.50em; }
+.width-4em50  { width:  4.50em; }
+.width-5em50  { width:  5.50em; }
+.width-6em50  { width:  6.50em; }
+.width-7em50  { width:  7.50em; }
+.width-8em50  { width:  8.50em; }
+.width-9em50  { width:  9.50em; }
+.width-10em50 { width: 10.50em; }
+.width-11em50 { width: 11.50em; }
+.width-12em50 { width: 12.50em; }
+.width-13em50 { width: 13.50em; }
+.width-14em50 { width: 14.50em; }
+.width-15em50 { width: 15.50em; }
+.width-16em { width: 16.00em; }
+.width-16em50 { width: 16.50em; }
+.width-17em { width: 17.00em; }
+.width-17em50 { width: 17.50em; }
+.width-18em { width: 18.00em; }
+.width-18em50 { width: 18.50em; }
+.width-19em { width: 19.00em; }
+.width-19em50 { width: 19.50em; }
+
+/* 【論理方向指定】行長方向のサイズの追加 */
+/* 文字数指定 */
+/* 横組み用 */
+.hltr .measure-16em,  .vrtl .hltr .measure-16em  { height: auto; width: 16.00em; }
+.hltr .measure-17em,  .vrtl .hltr .measure-17em  { height: auto; width: 17.00em; }
+.hltr .measure-18em,  .vrtl .hltr .measure-18em  { height: auto; width: 18.00em; }
+.hltr .measure-19em,  .vrtl .hltr .measure-19em  { height: auto; width: 19.00em; }
+/* 縦組み用 */
+.vrtl .measure-16em,  .hltr .vrtl .measure-16em  { height: 16.00em; width: auto; }
+.vrtl .measure-17em,  .hltr .vrtl .measure-17em  { height: 17.00em; width: auto; }
+.vrtl .measure-18em,  .hltr .vrtl .measure-18em  { height: 18.00em; width: auto; }
+.vrtl .measure-19em,  .hltr .vrtl .measure-19em  { height: 19.00em; width: auto; }
+
+/* 【論理方向指定】行幅方向のサイズの追加 */
+/* 文字数指定 */
+/* 横組み用 */
+.hltr .extent-16em,  .vrtl .hltr .extent-16em  { height: 16.00em; width: auto; }
+.hltr .extent-17em,  .vrtl .hltr .extent-17em  { height: 17.00em; width: auto; }
+.hltr .extent-18em,  .vrtl .hltr .extent-18em  { height: 18.00em; width: auto; }
+.hltr .extent-19em,  .vrtl .hltr .extent-19em  { height: 19.00em; width: auto; }
+/* 縦組み用 */
+.vrtl .extent-16em,  .hltr .vrtl .extent-16em  { height: auto; width: 16.00em; }
+.vrtl .extent-17em,  .hltr .vrtl .extent-17em  { height: auto; width: 17.00em; }
+.vrtl .extent-18em,  .hltr .vrtl .extent-18em  { height: auto; width: 18.00em; }
+.vrtl .extent-19em,  .hltr .vrtl .extent-19em  { height: auto; width: 19.00em; }
+
+/* -------------------------------------------------------------
+ * 作品別カスタマイズ領域
+ * ------------------------------------------------------------- */

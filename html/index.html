@@ -3,246 +3,318 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css"> -->
-  <link rel="stylesheet" href="../css/book-style.css">
-  <!-- <link rel="stylesheet" href="../css/style-reset.css">
-  <link rel="stylesheet" href="../css/style-standard.css">
-  <link rel="stylesheet" href="../css/style-advance.css">
-  <link rel="stylesheet" href="../css/style-kodansha.css">
-  <link rel="stylesheet" href="../css/style-check.css"> -->
+  <link href="../style/book-style.css" rel="stylesheet" type="text/css"/>
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" /> -->
 
   <title></title>
-
   <style type="text/css" media="screen">
-  html{
+  html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+    margin:0;
+    vertical-align:baseline;
+    overflow-wrap:break-word
+}
+*{
+    -webkit-user-select:text;
+    -webkit-font-smoothing:subpixel-antialiased;
+}
 
-  font-family:'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
-  /*-webkit-font-feature-settings: 'pkna';*/
-          /*font-feature-settings: 'pkna';*/
-  /*font-size: 18px;*/
-  /*font-size: 40px;*/
-  /*line-height: 1.7;*/
-  /*line-height: 1.9;*/
-  /*line-height: 2.2;*/
-  /*letter-spacing: 0.03em;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;*/
-  }
-  .kunten{vertical-align: bottom;}
-  .kunten-okuri{vertical-align: top;}
-  /*@font-face {
-    font-family: number!important;
-    src: local('Hiragino Mincho ProN');
-    unicode-range: U+2015!important;
-    unicode-range: U+41;
-  }*/
-  /*.wrap{
-    padding: 30px 20px;
-  }*/
-  /*p{
-      text-indent: 1em;
-      margin-left: 30px;
-    }*/
-  </style>
-  <!-- <script>
-        // .replace(new RegExp('『', 'g'), '*');
-    onload = function(){
-      document.body.innerHTML = document.body.innerHTML
-        .replace(/…/g, '⋯')
-        .replace(/…/g, '⋯ー');
-        var startBrackets = ['「', '『', '（', '【', '〈', '《', '［'];
-        var closeBrackets = ['」', '』', '）', '】', '〉', '》', '］'];
-        for (var i=0; i < startBrackets.length; i++) {
-          document.body.innerHTML = document.body.innerHTML.replace(new RegExp(startBrackets[i]+'<ruby>', 'g'), '<ruby>'+startBrackets[i]+'<rt></rt>');
-        }
-      };
-  </script> -->
-<style type="text/css" media="screen">
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;vertical-align:baseline;overflow-wrap:break-word}html.pulit-vrtl a{text-decoration:none;border-right:1px solid;padding-right:3px}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{-webkit-text-size-adjust:none;padding:0 0!important;overflow:hidden}body{padding:40px 20px!important;overflow:hidden!important}*/ @media only screen and (min-device-width:768px){body{padding:60px 80px!important}}table{border-collapse:collapse;border-spacing:0}tbody,tfoot,thead{vertical-align:middle!important}td,th,tr{vertical-align:inherit!important}dd,dir,menu,ol,ul{margin-left:30px!important}ol{list-style-type:decimal!important}li{display:list-item!important}ol ol,ol ul,ul ol,ul ul{margin-bottom:0!important;margin-top:0!important}a{-webkit-touch-callout:none}*{-webkit-user-select:text}img{-webkit-user-select:none}p{margin:0;line-height:1.40em!important;text-indent:1.25em}b,strong,th{font-weight:bolder!important}code,kbd,pre,samp,tt{font-size:1em}button,input,select,textarea{display:inline-block!important}del,s,strike{text-decoration:line-through!important}hr{background-color:rgba(0,0,0,.1)!important;border:none!important;height:1px!important}big{font-size:1.15em!important}small,sub,sup{font-size:.65em!important}sub{vertical-align:sub!important}sup{vertical-align:super!important}a{text-decoration:none}pre{white-space:pre-wrap}@page{margin:0 0!important}table,ol,il{text-align:-webkit-auto}h1,h2,h3,h4,h5,h6{text-rendering:optimizelegibility}a,h1,h2,h3,h4,h5,h6{word-break:break-word!important;-webkit-hyphens:none!important;hyphens:none!important}img,svg,audio,video{max-height:100vh!important;max-width:100vw!important;box-sizing:border-box;object-fit:contain;page-break-inside:avoid}div{max-width:100%}aside[epub|type~="footnote"]{display:none!important}ruby>rt,ruby>rp{-webkit-user-select:none}*{-webkit-font-smoothing:subpixel-antialiased}highlight{-webkit-touch-callout:none;-webkit-user-select:none}input,textarea,button,highlight,select,a{-webkit-tap-highlight-color:rgba(0,0,0,0)}html .highlight-yellow{background:#FFC107!important}html .highlight-green{background:#8BC34A!important}html .highlight-blue{background:#03A9F4!important}html .highlight-pink{background:#EC407A!important}html .highlight-underline{text-decoration:none;border-bottom:2px solid #F02814}html .highlight-yellow,html .highlight-green,html .highlight-blue,html .highlight-pink,span.epub-media-overlay-playing{border-radius:3px;padding:0 2px;margin:0 -2px}.mediaOverlayStyle0 span.epub-media-overlay-playing{background:#ccc}.mediaOverlayStyle1 .epub-media-overlay-playing{border-bottom:dotted 2px transparent;border-radius:0}html,body{-webkit-transition:all 0.6s ease}html{background-color:transparent}body{background-color:transparent}html.nightMode,html.nightMode body{background-color:#333}.nightMode p,.nightMode div,.nightMode span:not(.epub-media-overlay-playing){color:#fff;background-color:transparent}.nightMode h1,.nightMode h2,.nightMode h3,.nightMode h4,.nightMode h5,.nightMode h6{color:#fff}html.forelMode,html.forelMode body{background-color:#FBF0D9}.forelMode p,.forelMode div,.forelMode span:not(.epub-media-overlay-playing){color:#5F4B32;background-color:transparent}.forelMode h1,.forelMode h2,.forelMode h3,.forelMode h4,.forelMode h5,.forelMode h6{color:#5F4B32}.gothic,.gothic p,.gothic span,.gothic div,.gothic h1,.gothic h2,.gothic h3,.gothic h4,.gothic h5,.gothic h6{font-family:"HiraKakuProN-W3","MS ゴシック","sans-serif"}.hiramin,.hiramin p,.hiramin span,.hiramin div,.hiramin h1,.hiramin h2,.hiramin h3,.hiramin h4,.hiramin h5,.hiramin h6{font-family:"Hiragino Mincho ProN","IPAexMincho","MS 明朝","serif"}html.textSize12 .textSize12 body{font-size:12px!important}html.textSize15,.textSize15 body{font-size:15px!important}html.textSize18,.textSize18 body{font-size:18px!important}html.textSize21,.textSize21 body{font-size:21px!important}html.textSize24,.textSize24 body{font-size:24px!important}html.textSize27,.textSize27 body{font-size:27px!important}html.textSize30,.textSize30 body{font-size:30px!important}html.textSize33,.textSize33 body{font-size:33px!important}html.textSize36,.textSize36 body{font-size:36px!important}html.textSize39,.textSize39 body{font-size:39px!important}html.lineHeightSmall,.lineHeightSmall body,.lineHeightSmall p,.lineHeightSmall span,.lineHeightSmall div{line-height:1.7!important}html.lineHeightNormal,.lineHeightNormal body,.lineHeightNormal p,.lineHeightNormal span,.lineHeightNormal div{line-height:1.9!important}html.lineHeightBig,.lineHeightBig body,.lineHeightBig p,.lineHeightBig span,.lineHeightBig div{line-height:2.2!important}h1{font-size:2em;line-height:1.2}h2{font-size:1.5em;line-height:1.2}h3{font-size:1.17em;line-height:1.2}h4{font-size:1em;line-height:1.2}h5{font-size:.83em;line-height:1.2}h6{font-size:.67em;line-height:1.2}body{word-break:break-word!important;-webkit-hyphens:auto!important;hyphens:auto!important}p,span,div{font-size:1em;line-height:1.5}@media only screen and (min-device-width:600px){div{font-size:1em;line-height:1.438em!important}body{-webkit-hyphens:none!important;hyphens:none!important}}div.k-solid.block-align-center{-webkit-column-break-inside:avoid;page-break-inside:avoid;break-inside:avoid}
+html,body{
+    -webkit-transition:all 0.6s ease, background-color 0s linear,color 0s linear;
+    /*    background-color:transparent*/
+}
 html{
-  column-width: 320px;
-  width: 320px;
-  height: 500px;
-  overflow: auto;
-  column-rule: 5px dotted yellowgreen;
-  /*margin-right: 20px;*/
+    -webkit-text-size-adjust:none;
+/*    padding:40px!important;*/
+/*    margin: 20px!important;*/
+    /*    margin-bottom: 30px;*/
+    /*    padding:0 0!important;*/
+    /*    overflow:hidden;*/
+    /*background: #fc0!important;*/
+/*    min-width: 100%;*/
+/*    min-height: 100%;*/
+/*    height: 100%;*/
 }
 body{
-  /*background-color: #eef;*/
-  /*overflow: auto!important;*/
-  font-size: 20px;
-  /*line-height: 1.7;*/
-  /*transform: translateX(calc(-0.2em - 3px));*/
-      /*display: grid;
-    grid-template-columns: 200px 200px 200px;
-  -webkit-box-decoration-break: clone;*/
+/*    padding:40px!important;*/
+    font-family: "Sawarabi Mincho";
+    margin: 20px!important;
+/*    width: 80%;*/
+/*    margin:0 auto;*/
+/*    padding:40px 20px!important;*/
+    /*background: #999!important;*/
+    color: #000;
+    /*paddind: 30em;*/
+    /*    overflow:hidden!important*/
+    word-break:break-word!important;
+    -webkit-hyphens:auto!important;
+    hyphens:auto!important
 }
-body rt{
-    -webkit-column-break-inside: avoid;
-            page-break-inside: avoid;
-                 break-inside: avoid;
-}
-.upright-chrome{
-  display: inline-block;
-  -webkit-transform: rotate(-90deg);
-}
-ruby{
-/*    vertical-align: text-top;*/
-  /*break-inside: avoid-column;*/
-}
-
-</style>
-</head>
-
-
-
-
-
-
-
-
-
-<body class="tobira-page vrtl">
-
-
-
-<p> 　<ruby>私<rt>わたくし</rt></ruby>はその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を<ruby>憚<rt>はば</rt></ruby>かる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を<ruby>執<rt>と</rt></ruby>っても心持は同じ事である。よそよそしい<ruby>頭文字<rt>かしらもじ</rt></ruby>などはとても使う気にならない。</p>
-<p> 　私が先生と知り合いになったのは<ruby>鎌倉<rt>かまくら</rt></ruby>である。その時私はまだ若々しい書生であった。暑中休暇を利用して海水浴に行った友達からぜひ来いという<ruby>端書<rt>はがき</rt></ruby>を受け取ったので、私は多少の金を<ruby>工面<rt>くめん</rt></ruby>して、出掛ける事にした。私は金の工面に<ruby>二<rt>に</rt></ruby>、<ruby>三日<rt>さんち</rt></ruby>を費やした。ところが私が鎌倉に着いて三日と<ruby>経<rt>た</rt></ruby>たないうちに、私を呼び寄せた友達は、急に国元から帰れという電報を受け取った。電報には母が病気だからと断ってあったけれども友達はそれを信じなかった。友達はかねてから国元にいる親たちに<ruby>勧<rt>すす</rt></ruby>まない結婚を<ruby>強<rt>し</rt></ruby>いられていた。彼は現代の習慣からいうと結婚するにはあまり年が若過ぎた。それに<ruby>肝心<rt>かんじん</rt></ruby>の当人が気に入らなかった。それで夏休みに当然帰るべきところを、わざと避けて東京の近くで遊んでいたのである。彼は電報を私に見せてどうしようと相談をした。私にはどうしていいか分らなかった。けれども実際彼の母が病気であるとすれば彼は<ruby>固<rt>もと</rt></ruby>より帰るべきはずであった。それで彼はとうとう帰る事になった。せっかく来た私は一人取り残された。</p>
-<!-- <p> 　学校の授業が始まるにはまだ<ruby>大分<rt>だいぶ</rt></ruby><ruby>日数<rt>ひかず</rt></ruby>があるので鎌倉におってもよし、帰ってもよいという境遇にいた私は、当分元の宿に<ruby>留<rt>と</rt></ruby>まる覚悟をした。友達は中国のある資産家の<ruby>息子<rt>むすこ</rt></ruby>で金に不自由のない男であったけれども、学校が学校なのと年が年なので、生活の程度は私とそう変りもしなかった。したがって<ruby>一人<rt>ひとり</rt></ruby>ぼっちになった私は別に<ruby>恰好<rt>かっこう</rt></ruby>な宿を探す面倒ももたなかったのである。</p>
-<p> 　宿は鎌倉でも<ruby>辺鄙<rt>へんぴ</rt></ruby>な方角にあった。<ruby>玉突<rt>たまつ</rt></ruby>きだのアイスクリームだのというハイカラなものには長い<ruby>畷<rt>なわて</rt></ruby>を一つ越さなければ手が届かなかった。車で行っても二十銭は取られた。けれども個人の別荘はそこここにいくつでも建てられていた。それに海へはごく近いので海水浴をやるには至極便利な地位を占めていた。</p>
-<p> 　私は毎日海へはいりに出掛けた。古い<ruby>燻<rt>くす</rt></ruby>ぶり返った<ruby>藁葺<rt>わらぶき</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>を通り抜けて<ruby>磯<rt>いそ</rt></ruby>へ下りると、この<ruby>辺<rt>へん</rt></ruby>にこれほどの都会人種が住んでいるかと思うほど、避暑に来た男や女で砂の上が動いていた。ある時は海の中が<ruby>銭湯<rt>せんとう</rt></ruby>のように黒い頭でごちゃごちゃしている事もあった。その中に知った人を一人ももたない私も、こういう<ruby>賑<rt>にぎ</rt></ruby>やかな景色の中に<ruby>裹<rt>つつ</rt></ruby>まれて、砂の上に<ruby>寝<rt>ね</rt></ruby>そべってみたり、<ruby>膝頭<rt>ひざがしら</rt></ruby>を波に打たしてそこいらを<ruby>跳<rt>は</rt></ruby>ね<ruby>廻<rt>まわ</rt></ruby>るのは愉快であった。</p>
-<p> 　私は実に先生をこの<ruby>雑沓<rt>ざっとう</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に見付け出したのである。その時海岸には<ruby>掛茶屋<rt>かけぢゃや</rt></ruby>が二軒あった。私はふとした<ruby>機会<rt>はずみ</rt></ruby>からその一軒の方に行き<ruby>慣<rt>な</rt></ruby>れていた。<ruby>長谷辺<rt>はせへん</rt></ruby>に大きな別荘を構えている人と違って、<ruby>各自<rt>めいめい</rt></ruby>に専有の<ruby>着換場<rt>きがえば</rt></ruby>を<ruby>拵<rt>こしら</rt></ruby>えていないここいらの避暑客には、ぜひともこうした共同着換所といった<ruby>風<rt>ふう</rt></ruby>なものが必要なのであった。彼らはここで茶を飲み、ここで休息する<ruby>外<rt>ほか</rt></ruby>に、ここで海水着を洗濯させたり、ここで<ruby>鹹<rt>しお</rt></ruby>はゆい<ruby>身体<rt>からだ</rt></ruby>を清めたり、ここへ帽子や<ruby>傘<rt>かさ</rt></ruby>を預けたりするのである。海水着を持たない私にも持物を盗まれる恐れはあったので、私は海へはいるたびにその茶屋へ<ruby>一切<rt>いっさい</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>ぎ<ruby>棄<rt>す</rt></ruby>てる事にしていた。</p>
- -->
-<!--
-
-<article>
-<h1>タイトル</h1>
-<section>
- <p>テキストテキスト....</p>
-</section>
-</article>
-
-<div class="page">
- <div id="box1" class="region"></div>
- <div id="box2" class="region"></div>
- <div id="box3" class="region"></div>
-</div>
-
-
- -->
-
-
-<!--
-<p>【ルビ＋外字画像】</p>
-<p><ruby>外<rt>がい</rt>字<rt>じ</rt>画<rt>が</rt>像<rt>ぞう</rt><img class="gaiji" src="../image/u9b09.png" alt=""/><rt>ためし</rt>表<rt>ひよう</rt>示<rt>じ</rt></ruby></p>
-<p><br/></p>
-<p>【長いルビ試し】</p>
-<p>園にルビをつけ、<ruby>園<rt>●●●</rt>園<rt>●●●●</rt>園<rt>●●●</rt>園<rt>●●●</rt></ruby>に<ruby>園<rt>▼▼▼</rt>園<rt>▼▼▼▼</rt>園<rt>▼▼▼</rt>園<rt>▼▼▼</rt></ruby>として、被ルビ間のあきを確認。</p>
-<p>　その<ruby>一<rt>いっ</rt>報<rt>ぽう</rt></ruby>を<ruby>受<rt>う</rt></ruby>け、<ruby>日<rt>に</rt>本<rt>ほん</rt>医<rt>い</rt>科<rt>か</rt>大<rt>だい</rt>学<rt>がく</rt>千<rt>ち</rt>葉<rt>ば</rt>北<rt>ほく</rt>総<rt>そう</rt>病<rt>びょう</rt>院<rt>いん</rt></ruby>、<ruby>救<rt>きゅう</rt>命<rt>めい</rt>救<rt>きゅう</rt>急<rt>きゅう</rt></ruby>センターのドクターとナースが、<ruby>大<rt>たい</rt>量<rt>りょう</rt></ruby>の<ruby>医<rt>い</rt>療<rt>りょう</rt>物<rt>ぶっ</rt>資<rt>し</rt></ruby>とともに<ruby>乗<rt>の</rt></ruby>りこんだのは、ドクターヘリ。</p>
-<p><br/></p>
-<p>【親ルビに部分的にサイズ指定】</p>
-<p><ruby>あいう<span class="font-080per">（えお）</span>かきく<rt>アイウエオカキク</rt></ruby></p>
-<p><ruby>あいう<rt>アイウ</rt><span class="font-080per">（えお）</span><rt>エオ</rt>かきく<rt>カキク</rt></ruby></p>
-<p><br/></p>
-<hr/>
-<p>【ルビ＋外字画像】</p>
-<p><ruby>外<rt>がい</rt>字<rt>じ</rt>画<rt>が</rt>像<rt>ぞう</rt><img class="gaiji" src="../image/u9b09.png" alt=""/><rt>ためし</rt>表<rt>ひよう</rt>示<rt>じ</rt></ruby></p>
-<p><br/></p>
-<p>【長いルビ試し】</p>
-<p>園にルビをつけ、<ruby>園<rt>●●●</rt>園<rt>●●●●</rt>園<rt>●●●</rt>園<rt>●●●</rt></ruby>に<ruby>園<rt>▼▼▼</rt>園<rt>▼▼▼▼</rt>園<rt>▼▼▼</rt>園<rt>▼▼▼</rt></ruby>として、被ルビ間のあきを確認。</p>
-<p>　その<ruby>一<rt>いっ</rt>報<rt>ぽう</rt></ruby>を<ruby>受<rt>う</rt></ruby>け、<ruby>日<rt>に</rt>本<rt>ほん</rt>医<rt>い</rt>科<rt>か</rt>大<rt>だい</rt>学<rt>がく</rt>千<rt>ち</rt>葉<rt>ば</rt>北<rt>ほく</rt>総<rt>そう</rt>病<rt>びょう</rt>院<rt>いん</rt></ruby>、<ruby>救<rt>きゅう</rt>命<rt>めい</rt>救<rt>きゅう</rt>急<rt>きゅう</rt></ruby>センターのドクターとナースが、<ruby>大<rt>たい</rt>量<rt>りょう</rt></ruby>の<ruby>医<rt>い</rt>療<rt>りょう</rt>物<rt>ぶっ</rt>資<rt>し</rt></ruby>とともに<ruby>乗<rt>の</rt></ruby>りこんだのは、ドクターヘリ。</p>
-<p><br/></p>
-<p>【親ルビに部分的にサイズ指定】</p>
-<p><ruby>あいう<span class="font-080per">（えお）</span>かきく<rt>アイウエオカキク</rt></ruby></p>
-<p><ruby>あいう<rt>アイウ</rt><span class="font-080per">（えお）</span><rt>エオ</rt>かきく<rt>カキク</rt></ruby></p>
-<p><br/></p>
-<hr/>
-<p>【ルビ＋外字画像】</p>
-<p><ruby>外<rt>がい</rt>字<rt>じ</rt>画<rt>が</rt>像<rt>ぞう</rt><img class="gaiji" src="../image/u9b09.png" alt=""/><rt>ためし</rt>表<rt>ひよう</rt>示<rt>じ</rt></ruby></p>
-<p><br/></p>
-<p>【長いルビ試し】</p>
-<p>園にルビをつけ、<ruby>園<rt>●●●</rt>園<rt>●●●●</rt>園<rt>●●●</rt>園<rt>●●●</rt></ruby>に<ruby>園<rt>▼▼▼</rt>園<rt>▼▼▼▼</rt>園<rt>▼▼▼</rt>園<rt>▼▼▼</rt></ruby>として、被ルビ間のあきを確認。</p>
-<p>　その<ruby>一<rt>いっ</rt>報<rt>ぽう</rt></ruby>を<ruby>受<rt>う</rt></ruby>け、<ruby>日<rt>に</rt>本<rt>ほん</rt>医<rt>い</rt>科<rt>か</rt>大<rt>だい</rt>学<rt>がく</rt>千<rt>ち</rt>葉<rt>ば</rt>北<rt>ほく</rt>総<rt>そう</rt>病<rt>びょう</rt>院<rt>いん</rt></ruby>、<ruby>救<rt>きゅう</rt>命<rt>めい</rt>救<rt>きゅう</rt>急<rt>きゅう</rt></ruby>センターのドクターとナースが、<ruby>大<rt>たい</rt>量<rt>りょう</rt></ruby>の<ruby>医<rt>い</rt>療<rt>りょう</rt>物<rt>ぶっ</rt>資<rt>し</rt></ruby>とともに<ruby>乗<rt>の</rt></ruby>りこんだのは、ドクターヘリ。</p>
-<p><br/></p>
-<p>【親ルビに部分的にサイズ指定】</p>
-<p><ruby>あいう<span class="font-080per">（えお）</span>かきく<rt>アイウエオカキク</rt></ruby></p>
-<p><ruby>あいう<rt>アイウ</rt><span class="font-080per">（えお）</span><rt>エオ</rt>かきく<rt>カキク</rt></ruby></p>
-<p><br/></p>
-<hr/>
-
- -->
-
-
-
-</body>
-
-
-
-
-<script type="text/javascript" charset="utf-8">
-  window.onload = function() {
-    var targetClass = "upright";
-    var targetElemants = document.getElementsByClassName( targetClass );
-    Array.prototype.forEach.call(targetElemants, function(targetElemant){
-      var targetHTML = targetElemant.innerHTML;
-      var beforeTextArr = targetHTML.split('');
-      var afterText = '';
-      for (var i = 0; i < beforeTextArr.length; i++) {
-        if (beforeTextArr[i].match(/^[\u0000-\u017e]+$/)) {
-          afterText += '<span class="upright-chrome">' + beforeTextArr[i] + '</span>';
-        } else{
-          afterText += beforeTextArr[i];
-        }
-      }
-      targetElemant.innerHTML = afterText;
-    });
-  };
-</script>
-
-
-
-
-
-
-<!--
-
-
-<script type="text/javascript">
-  var iOSver = function(){
-    if (/iP(hone|od|ad)/.test(navigator.platform)) {
-      var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-      return parseInt(v[1], 10);
+@media only screen and (min-device-width:768px){
+    body{
+        /*        padding:60px 80px!important*/
     }
-  }
-  var manualTCY = function(){
-    var tcys = document.getElementsByClassName('tcy');
-    Array.prototype.filter.call(tcys, function(tcy){
-      var tcyHTML = tcy.innerHTML;
-      if (!tcyHTML.match(/^[\x20-\x40]+$/)) {
-        if (!tcyHTML.match(/^[\x28-\x29]/)) {
-          tcy.classList.add("tcy-char");
-        }
-      };
-      if (!tcyHTML.match(/^[\x00-\xff]+$/)) {
-        var beforeText = tcyHTML
-        var beforeTextArr = beforeText.split('');
-        var afterText = '';
-        for (var i = 0; i < beforeTextArr.length; i++) {
-          if (!beforeTextArr[i].match(/^[\x00-\xff]+$/)) {
-            afterText += '<span class="tcy-char-2byte">' + beforeTextArr[i] + '</span>';
-          } else{
-            afterText += beforeTextArr[i];
-          }
-        }
-        tcy.innerHTML = afterText;
-      }
-    });
-  }
-window.onload = function() {
-  if(iOSver() == 8){
-    manualTCY();
-  }
-};
-</script> -->
+}
+@media only screen and (min-device-width:600px){
+    div{
+        font-size:1em;
+        line-height:1.438em!important
+    }
+    body{
+        -webkit-hyphens:none!important;
+        hyphens:none!important
+    }
+}
+html.pulit-vrtl a{
+    text-decoration:none;
+    border-right:1px solid;
+    padding-right:3px
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block
+}
+/*div{*/
+/*    max-width:100%*/
+/*}*/
+p,span,div{
+    font-size:1em;
+    line-height:1.5
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0
+}
+table,ol,il{
+    text-align:-webkit-auto
+}
+tbody,tfoot,thead{
+    vertical-align:middle!important
+}
+td,th,tr{
+    vertical-align:inherit!important
+}
+dd,dir,menu,ol,ul{
+    margin-left:30px!important
+}
+ol{
+    list-style-type:decimal!important
+}
+li{
+    display:list-item!important
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul{
+    margin-bottom:0!important;
+    margin-top:0!important
+}
+h1,h2,h3,h4,h5,h6{
+    text-rendering:optimizelegibility
+    line-height:1.2
+}
+h1{ font-size:2em; }
+h2{ font-size:1.5em; }
+h3{ font-size:1.17em; }
+h4{ font-size:1em; }
+h5{ font-size:.83em; }
+h6{ font-size:.67em; }
+a,h1,h2,h3,h4,h5,h6{
+    word-break:break-word!important;
+    -webkit-hyphens:none!important;
+    hyphens:none!important
+}
+a{
+    -webkit-touch-callout:none;
+    text-decoration:none;
+}
+img{
+    -webkit-user-select:none
+}
+img,svg,audio,video{
+    max-height:100vh!important;
+    max-width:100vw!important;
+    box-sizing:border-box;
+    object-fit:contain;
+    page-break-inside:avoid
+}
+p{
+    margin:0;
+    line-height:1.40em!important;
+    text-indent:1.25em
+}
+b,strong,th{
+    font-weight:bolder!important
+}
+code,kbd,pre,samp,tt{
+    font-size:1em
+}
+button,input,select,textarea{
+    display:inline-block!important
+}
+del,s,strike{
+    text-decoration:line-through!important
+}
+hr{
+    background-color:rgba(0,0,0,.1)!important;
+    border:none!important;
+    height:1px!important
+}
+big{
+    font-size:1.15em!important
+}
+small,sub,sup{
+    font-size:.65em!important
+}
+sub{
+    vertical-align:sub!important
+}
+sup{
+    vertical-align:super!important
+}
+pre{
+    white-space:pre-wrap
+}
+@page{
+    margin:0 0!important
+}
+
+aside[epub|type~="footnote"]{
+    display:none!important
+}
+ruby>rt,ruby>rp{
+    -webkit-user-select:none
+}
+highlight{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none
+}
+input,textarea,button,highlight,select,a{
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+html .highlight-yellow{
+    background:#FFC107!important
+}
+html .highlight-green{
+    background:#8BC34A!important
+}
+html .highlight-blue{
+    background:#03A9F4!important
+}
+html .highlight-pink{
+    background:#EC407A!important
+}
+html .highlight-underline{
+    text-decoration:none;
+    border-bottom:2px solid #F02814
+}
+html .highlight-yellow,html .highlight-green,html .highlight-blue,html .highlight-pink,span.epub-media-overlay-playing{
+    border-radius:3px;
+    padding:0 2px;
+    margin:0 -2px
+}
+.mediaOverlayStyle0 span.epub-media-overlay-playing{
+    background:#ccc
+}
+.mediaOverlayStyle1 .epub-media-overlay-playing{
+    border-bottom:dotted 2px transparent;
+    border-radius:0
+}
+html.nightMode,html.nightMode body{
+    background-color:#333
+}
+.nightMode p,.nightMode div,.nightMode span:not(.epub-media-overlay-playing){
+    color:#fff;
+    background-color:transparent
+}
+.nightMode h1,.nightMode h2,.nightMode h3,.nightMode h4,.nightMode h5,.nightMode h6{
+    color:#fff
+}
+html.forelMode,html.forelMode body{
+    background-color:#FBF0D9
+}
+.forelMode p,.forelMode div,.forelMode span:not(.epub-media-overlay-playing){
+    color:#5F4B32;
+    background-color:transparent
+}
+.forelMode h1,.forelMode h2,.forelMode h3,.forelMode h4,.forelMode h5,.forelMode h6{
+    color:#5F4B32
+}
+.gothic,.gothic p,.gothic div,.gothic h1,.gothic h2,.gothic h3,.gothic h4,.gothic h5,.gothic h6{
+    font-family:"HiraKakuProN-W3","MS ゴシック","sans-serif"
+}
+.hiramin,.hiramin p,.hiramin div,.hiramin h1,.hiramin h2,.hiramin h3,.hiramin h4,.hiramin h5,.hiramin h6{
+    font-family:"Hiragino Mincho ProN","IPAexMincho","MS 明朝","serif"
+}
+html.textSize12,.textSize12 body{
+    font-size:12px!important
+}
+html.textSize15,.textSize15 body{
+    font-size:15px!important
+}
+html.textSize18,.textSize18 body{
+    font-size:18px!important
+}
+html.textSize21,.textSize21 body{
+    font-size:21px!important
+}
+html.textSize24,.textSize24 body{
+    font-size:24px!important
+}
+html.textSize27,.textSize27 body{
+    font-size:27px!important
+}
+html.textSize30,.textSize30 body{
+    font-size:30px!important
+}
+html.textSize33,.textSize33 body{
+    font-size:33px!important
+}
+html.textSize36,.textSize36 body{
+    font-size:36px!important
+}
+html.textSize39,.textSize39 body{
+    font-size:39px!important
+}
+html.lineHeightSmall,html.lineHeightSmall body,html.lineHeightSmall p,html.lineHeightSmall span,html.lineHeightSmall div,html.lineHeightSmall span[data-id="pulit-highlight"]{
+    line-height:1.7!important
+}
+html.lineHeightNormal,html.lineHeightNormal body,html.lineHeightNormal p,html.lineHeightNormal span,html.lineHeightNormal div,html.lineHeightNormal span[data-id="pulit-highlight"]{
+    line-height:1.9!important
+}
+html.lineHeightBig,html.lineHeightBig body,html.lineHeightBig p,html.lineHeightBig span,html.lineHeightBig div,html.lineHeightBig span[data-id="pulit-highlight"]{
+    line-height:2.2!important
+}
+
+/* kodansha only */
+div.k-solid.block-align-center{
+    -webkit-column-break-inside:avoid;
+    page-break-inside:avoid;
+    break-inside:avoid
+}
+.italic {
+    transform: skewY(-12deg);
+    font-style: inherit;
+    display: inline-block;
+}
+
+
+
+
+  </style>
+</head>
+<body class="main-top vrtl">
+
+
+
+<div class="main">
+
+<p>　どうも最近、比べっこに夢中の人が多い気がするのです。「この人、同い歳なのに肌がきれい」「私よりいい服着てるな」程度で収まっていればいいけれど、それを自分の格付けにしてしまうとしんどいですよね。誰が一番で自分はどの辺か、つい比べてしまう自動格付け機能が内蔵されているみたいで、苦しくなることもあるでしょう。</p>
+<p>　学校だってそうでした。華やかなのは一軍、それ以外は二軍……誰もはっきり口にはしないけど、そんな棲み分けが確かにありました。なんて疲れる世界だったんだろう。だけど私たち、ちゃんと卒業できたのかな。大人になっても、変わってない気がします。</p>
+<p>　女子会やママ友集まりでは、仲良く談笑しながら常にランクの入れ替えや競り合いが行われています。レースに参加したくないと思っても、ランキングの勝者たちに一方的に「負け組」扱いされると納得いかなくて、つい意識してしまうことも。</p>
+<p>　人はなぜ群れるのでしょう。仕切り屋さんはどこにでもいるもので、保育園のお母さん同士でも「親交を深めましょう！」なんて盛んにお呼びがかかります。一度参加してしまったら最後、次からは欠席するのにいちいち理由を考えなくてはなりません。もちろん、気持ちよく欠席できる空気を作ってくれる仕切り屋さんならいいのですが……。</p>
+
+
+
+</div>
+</body>
 </html>
