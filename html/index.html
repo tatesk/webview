@@ -11,6 +11,20 @@
 
   <title></title>
   <style type="text/css" media="screen">
+/*body{
+    column-width: 375px;
+    height:400px;
+    width: 375px;
+
+}*/
+
+
+
+/*max-height:640px!important;
+    max-width:320px!important;
+*/
+
+
   html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
     margin:0;
     vertical-align:baseline;
@@ -23,40 +37,30 @@
 
 html,body{
     -webkit-transition:all 0.6s ease, background-color 0s linear,color 0s linear;
-    /*    background-color:transparent*/
+    background-color:transparent
 }
 html{
     -webkit-text-size-adjust:none;
-/*    padding:40px!important;*/
-/*    margin: 20px!important;*/
-    /*    margin-bottom: 30px;*/
-    /*    padding:0 0!important;*/
-    /*    overflow:hidden;*/
-    /*background: #fc0!important;*/
-/*    min-width: 100%;*/
-/*    min-height: 100%;*/
-/*    height: 100%;*/
+    background-color:#00FFCC;
+    border: solid 1px #FF00FF;
+    width: 100vw;
+    column-width: 100vh;
+    height: 100vh;
+    column-gap: 0px;
+    padding: 0;
 }
 body{
-/*    padding:40px!important;*/
-    /*font-family: "Kokoro";*/
-    font-family: JPAMincho,serif;
-    /*font-family: "Sawarabi Mincho";*/
-    margin: 20px!important;
-/*    width: 80%;*/
-/*    margin:0 auto;*/
-/*    padding:40px 20px!important;*/
-    /*background: #999!important;*/
-    color: #000;
-    /*paddind: 30em;*/
-    /*    overflow:hidden!important*/
+    padding: 40px 20px!important;
+    overflow:hidden!important;
     word-break:break-word!important;
     -webkit-hyphens:auto!important;
-    hyphens:auto!important
+    hyphens:auto!important;
+    background-color:#CCFF00;
+    border: solid 1px #FF0000;
 }
 @media only screen and (min-device-width:768px){
     body{
-        /*        padding:60px 80px!important*/
+        padding:60px 80px!important
     }
 }
 @media only screen and (min-device-width:600px){
@@ -136,11 +140,12 @@ img{
     -webkit-user-select:none
 }
 img,svg,audio,video{
-    max-height:100vh!important;
-    max-width:100vw!important;
+    max-height:calc(100vh - 80px)!important;
+    max-width:calc(100vw - 40px)!important;
     box-sizing:border-box;
     object-fit:contain;
-    page-break-inside:avoid
+    break-inside:avoid!important;
+    page-break-inside: avoid!important;
 }
 p{
     margin:0;
@@ -245,10 +250,10 @@ html.forelMode,html.forelMode body{
     color:#5F4B32
 }
 .gothic,.gothic p,.gothic div,.gothic h1,.gothic h2,.gothic h3,.gothic h4,.gothic h5,.gothic h6{
-    font-family:"HiraKakuProN-W3","MS ゴシック","sans-serif"
+    font-family: sans-serif;
 }
 .hiramin,.hiramin p,.hiramin div,.hiramin h1,.hiramin h2,.hiramin h3,.hiramin h4,.hiramin h5,.hiramin h6{
-    font-family:"Hiragino Mincho ProN","IPAexMincho","MS 明朝","serif"
+    font-family: JPAMincho,serif;
 }
 html.textSize12,.textSize12 body{
     font-size:12px!important
@@ -296,11 +301,12 @@ div.k-solid.block-align-center{
     page-break-inside:avoid;
     break-inside:avoid
 }
-.italic {
-    transform: skewY(-12deg);
-    font-style: inherit;
+.vrtl .italic{
+    font-style: initial !important;
     display: inline-block;
-}
+    transform: skewY(-12deg);
+ }
+
 
 
 
@@ -310,34 +316,20 @@ div.k-solid.block-align-center{
 <body class="main-top vrtl">
 
 
-
 <div class="main">
-
-
-
-<h3 class="gfont font-110per">行間に挿入する画像</h3>
-<p><br/></p>
-<p>　履歴からいえば僕は一家のルーツの地を知らずに育った沖縄人二世で、仲村家が定住した大阪の<ruby>此<rt>この</rt>花<rt>はな</rt></ruby>区で十八歳まで同居している。</p>
-<p><br/></p>
+<h2 class="mfont font-120per" id="link_001">はじめに</h2>
 <div class="align-center">
-<p><img class="fit max-height-080per" src="../image/p072.jpg" alt=""/></p>
-<p><br/></p>
+<p><img alt="" class="fit" src="../image/p003.jpg"/></p>
 </div>
-<p>　<ruby>普<rt>ふ</rt>天<rt>てん</rt>間<rt>ま</rt></ruby>基地移設問題では「最低でも県外」と明言した鳩山由紀夫首相が、「<ruby>辺<rt>へ</rt>野<rt>の</rt>古<rt>こ</rt></ruby>現行案」に回帰するという極めつきの公約違反までやってのけた。このときには「平成の琉球処分」という声まであがったぐらいで、県民にとって忘れられない日となった。</p>
-<p>　にもかかわらず、県民のほとんどがその国家への帰属を肯定する回答を示したのである。どうにも理解に苦しんでしまうが、実のところ、「復帰してよかった」という回答は過去実施したどの世論調査をみても高い。</p>
-<div class="align-left">
-<p><img class="fit width-8em" src="../image/P167.jpg" alt=""/></p>
+<p>　どうも最近、比べっこに夢中の人が多い気がするのです。「この人、同い歳なのに肌がきれい」「私よりいい服着てるな」程度で収まっていればいいけれど、それを自分の格付けにしてしまうとしんどいですよね。誰が一番で自分はどの辺か、つい比べてしまう自動格付け機能が内蔵されているみたいで、苦しくなることもあるでしょう。</p>
+<p>　学校だってそうでした。華やかなのは一軍、それ以外は二軍……誰もはっきり口にはしないけど、そんな棲み分けが確かにありました。なんて疲れる世界だったんだろう。だけど私たち、ちゃんと卒業できたのかな。大人になっても、変わってない気がします。</p>
+<p>　女子会やママ友集まりでは、仲良く談笑しながら常にランクの入れ替えや競り合いが行われています。レースに参加したくないと思っても、ランキングの勝者たちに一方的に「負け組」扱いされると納得いかなくて、つい意識してしまうことも。</p>
+<p>　人はなぜ群れるのでしょう。仕切り屋さんはどこにでもいるもので、保育園のお母さん同士でも「親交を深めましょう！」なんて盛んにお呼びがかかります。一度参加してしまったら最後、次からは欠席するのにいちいち理由を考えなくてはなりません。もちろん、気持ちよく欠席できる空気を作ってくれる仕切り屋さんならいいのですが……。</p>
+<p>　女子会だって油断なりません。人目のあるところではみんなで写メを撮ったりしていますが、実は仲が悪かったり、気を抜くと声が<span class="tcy">2</span>オクターブ低くなったり。そんな現場を目撃してしまったことがあります。あれはショックだったなあ。</p>
+<p>　私も<span class="tcy">38</span>年ほど女をやっていますが、<span class="tcy">30</span>代は何だか苦しそうな人が多い気がします。<span class="tcy">20</span>代ではなくなった焦りとか、結婚とか出産とか仕事とか、変化の多いお年頃。仲の良かった友達ともいろんな差が出てきて、「私、出遅れてるかも」なんて悩みがちです。だけど比べっこはキリがない。他人と比較するのではなくて、手持ちの自分に地道に手入れをすればいいんだと思います。</p>
+<p>　初めは野山だったところに<ruby>鍬<rt>くわ</rt></ruby>を入れて、台風が来たり日照りが続いたりするたびに、また一からやり直し。だけどその積み重ねで、だんだん畑との付き合い方がわかってくる。自分との付き合いも、多分そんな感じでいいんだと思います。</p>
+<p>　他人との比較で自分を計ると、頭にはいつもプラスかマイナスがくっついています。そんなの、取っちゃえばいいと思う。<span class="tcy">-a</span>に仕切りを立てると<img alt="" class="gaiji" src="../image/dp005_01.png"/>、つまり絶対値。人並みよりも足りない私でも、比べなければ、ほら、堂々と自分の顔で立っている。みんな、絶対値で生きよう。一緒にさ。そんなコラムにしたくて、「絶対☆女子」とつけました。</p>
 </div>
-<div class="align-left">
-<p><img class="fit" src="../image/P167.jpg" alt=""/></p>
-</div>
-<p>　加えて日本復帰に際しては核兵器の持ち込みや、軍用地の復元費などをめぐって、さまざまな密約が日米両首脳の間でかわされていたことも明らかになっている。</p>
-<p><br/></p>
-<h3 class="gfont font-110per">行中に挿入する画像</h3>
-<p><br/></p>
-<p>　ニュース<img class="gaiji-line" src="../image/tameshi01.png" alt=""/>は生まれ育った大阪で見ている。</p>
-</div>
-
 
 
 </div>
